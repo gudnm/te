@@ -1,0 +1,23 @@
+{
+  "name": "te",
+  "version": "0.0.1",
+  "description": "text editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gudnm/te.git"
+  },
+  "author": "Ivan Vashchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gudnm/te/issues"
+  },
+  "homepage": "https://github.com/gudnm/te#readme",
+  "dependencies": {
+    "commander": "git+https://github.com/tj/commander.js.git"
+  },
+  "bin": "./index.js"
+}
