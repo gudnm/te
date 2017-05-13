@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-
+'use strict';
 const program = require('commander');
-const addLineNumbers = require('add-line-numbers');
 const fs = require('fs');
+const listAndRun = require('./list-and-run').listAndRun;
 const path = '/tmp/te';
 
 program.parse(process.argv);
@@ -21,8 +21,4 @@ if (lines.length === 0) {
     fs.writeFileSync(path, lines.join('\n'));
 }
 
-const updated_file = fs.readFileSync(path, 'utf8');
-
-if (updated_file.length) {
-    console.log(addLineNumbers(updated_file));
-}
+listAndRun();
