@@ -4,7 +4,7 @@ const program = require('commander');
 
 program
 .version('0.0.1')
-.command('list', 'output code listing and its execution result'),
+.command('list', 'output code listing and its execution result')
 .alias('l')
 .command('append <line>', 'append a line to the end')
 .alias('a')
