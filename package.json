@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gudnm/te#readme",
   "dependencies": {
+    "add-line-numbers": "^1.0.1",
     "commander": "git+https://github.com/tj/commander.js.git"
   },
   "bin": "./index.js"
