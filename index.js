@@ -14,6 +14,10 @@ program
 .alias('r')
 .command('delete <line_number>', 'delete a line')
 .alias('d')
+.command('clear', 'clear the code listing')
+.alias('c')
+.command('undo', 'undo the last change')
+.alias('u')
 .parse(process.argv);
 
 if (program.args.length === 0) program.help();
