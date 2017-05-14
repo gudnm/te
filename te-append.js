@@ -9,6 +9,7 @@ program.parse(process.argv);
 
 const line = program.args;
 const file = fs.readFileSync(path, 'utf8');
+fs.writeFileSync(path+'0', file);
 
 var lines = [];
 if (file.length) {

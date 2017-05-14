@@ -7,8 +7,7 @@ const path = '/tmp/te';
 
 program.parse(process.argv);
 
-const file = fs.readFileSync(path, 'utf8');
-fs.writeFileSync(path+'0', file);
-fs.writeFileSync(path, "");
+const file = fs.readFileSync(path+'0', 'utf8');
+fs.writeFileSync(path, file);
 
 listAndRun();

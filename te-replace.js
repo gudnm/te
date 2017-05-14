@@ -10,6 +10,7 @@ program.parse(process.argv);
 const line_number = parseInt(program.args[0]);
 const line = program.args[1];
 const file = fs.readFileSync(path, 'utf8');
+fs.writeFileSync(path+'0', file);
 var lines = file.split('\n');
 
 if (0 < line_number <= lines.length) {
