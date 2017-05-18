@@ -1,6 +1,6 @@
 {
   "name": "tedit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Line-oriented text editor",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,7 @@
     "add-line-numbers": "^1.0.1",
     "commander": "git+https://github.com/tj/commander.js.git"
   },
-  "bin": {"te": "./index.js"}
+  "bin": {
+    "te": "./index.js"
+  }
 }
