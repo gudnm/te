@@ -2,7 +2,7 @@
 'use strict';
 const program = require('commander');
 const fs = require('fs');
-const listAndRun = require('./list-and-run').listAndRun;
+const listAndRun = require('./list-and-run');
 const path = '/tmp/te';
 
 program.parse(process.argv);

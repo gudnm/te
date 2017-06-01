@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const program = require('commander');
-const listAndRun = require('./list-and-run').listAndRun;
+const listAndRun = require('./list-and-run');
 const fs = require('fs');
 const path = '/tmp/te';
 

@@ -4,7 +4,7 @@ const spawnSync = require('child_process').spawnSync;
 const fs = require('fs');
 const path = '/tmp/te';
 
-exports.listAndRun = () => {
+module.exports = function listAndRun() {
     var text = [];
 
     const listing = fs.readFileSync(path, 'utf8');
