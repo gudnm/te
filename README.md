@@ -21,6 +21,7 @@ Commands:
   delete|d <line_number>          delete a line
   clear|c                         clear the code listing
   undo|u                          undo the last change
+  save|s <file_name>              save listing to a file
   help [cmd]                      display help for [cmd]
 
 Options:
@@ -33,17 +34,17 @@ Options:
 ```
 machine:~ user$ te a 'var a = 1;'
 1: var a = 1;
-stdout: stderr: 
+stdout: stderr:
 machine:~ user$ te a 'var b = 2;'
 1: var a = 1;
 2: var b = 2;
-stdout: stderr: 
+stdout: stderr:
 machine:~ user$ te a 'console.log(a+b);'
 1: var a = 1;
 2: var b = 2;
 3: console.log(a+b);
 stdout: 3
-stderr: 
+stderr:
 machine:~ user$ te r 2 'varb = 3;'
 1: var a = 1;
 2: varb = 3;
@@ -67,7 +68,7 @@ machine:~ user$ te u
 2: var b = 2;
 3: console.log(a+b);
 stdout: 3
-stderr: 
+stderr:
 machine:~ user$ te c
 Code listing is empty
 machine:~ user$ te u
@@ -75,5 +76,7 @@ machine:~ user$ te u
 2: var b = 2;
 3: console.log(a+b);
 stdout: 3
-stderr: 
+stderr:
+machine:~ user$ te s "/Users/user/myfile.js"
+/Users/user/myfile.js saved
 ```
