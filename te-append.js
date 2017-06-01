@@ -11,12 +11,9 @@ const line = program.args;
 const file = fs.readFileSync(path, 'utf8');
 fs.writeFileSync(path+'0', file);
 
-var lines = [];
-if (file.length) {
-    var lines = file.split('\n');
-}
-lines.push(line);
-
-fs.writeFileSync(path, lines.join('\n'));
-
-listAndRun();
+fs.appendFile(path, '\n'+line, (err) => {
+    if (err) {
+        console.log(err);
+    }
+    listAndRun();
+});
