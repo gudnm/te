@@ -18,6 +18,8 @@ program
 .alias('c')
 .command('undo', 'undo the last change')
 .alias('u')
+.command('save <file_name>', 'save listing to a file')
+.alias('s')
 .parse(process.argv);
 
 if (program.args.length === 0) program.help();
